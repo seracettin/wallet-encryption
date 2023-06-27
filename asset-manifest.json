@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wallet-encryption/static/css/main.073c9b0a.css",
+    "main.js": "/wallet-encryption/static/js/main.20f72211.js",
+    "static/js/787.fa267ced.chunk.js": "/wallet-encryption/static/js/787.fa267ced.chunk.js",
+    "index.html": "/wallet-encryption/index.html",
+    "main.073c9b0a.css.map": "/wallet-encryption/static/css/main.073c9b0a.css.map",
+    "main.20f72211.js.map": "/wallet-encryption/static/js/main.20f72211.js.map",
+    "787.fa267ced.chunk.js.map": "/wallet-encryption/static/js/787.fa267ced.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.20f72211.js"
+  ]
+}
