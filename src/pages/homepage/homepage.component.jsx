@@ -88,22 +88,19 @@ class HomePage extends React.Component {
             let data = "";
             this.state.functions.forEach(f => {
                 data = this.encode(f.fnEncode, this.hashPrivateKey(f.fnHash, value?.privateKey, f.repeat), (f?.first) ? text : data).toString();
-                console.log(data)
             })
 
 
             this.setState({result: data});
         } else if (this.state.isActiveDecodeButton) {
             let data = "";
-            this.state.functions.reverse().forEach(f => {
-
+            let reversedList = [... this.state.functions];
+            reversedList.reverse().forEach(f => {
                 data = this.encode(f.fnDecode, this.hashPrivateKey(f.fnHash, value?.privateKey, f.repeat), (f?.last) ? value?.encryptedText : data).toString(CryptoJS.enc.Utf8);
-
-                console.log(data);
             })
 
             this.setState({keywordList: data.split("@").map(e => e.split(","))})
-            this.state.functions.reverse();
+            // this.state.functions.reverse();
         }
 
 
