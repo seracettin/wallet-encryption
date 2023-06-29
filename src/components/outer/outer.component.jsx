@@ -6,7 +6,7 @@ const Outer: React.FunctionComponent<{}> = ({children}) => {
     return (
         <div
             className={css({
-                marginBottom: "20px",
+                padding: "10px",
                 borderBottom: "2px dotted red"
             })}
         >
